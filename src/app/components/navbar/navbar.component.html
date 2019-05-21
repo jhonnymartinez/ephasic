@@ -1,0 +1,29 @@
+<nav class="custom-nav">
+  <div class="cont-brand">
+    <img src="../../../assets/img/common/logo_3phasic_dark.svg">
+  </div>
+  <div class="cont-toggle-btn">
+    <button (click)="toggleNavbar()" [ngClass]="toggleBtnClass()" class="hamburger hamburger--collapse" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+  </div>
+  <div *ngIf="isToggled" class="cont-content">
+    <div class="slogan">
+      Trascendemos<br>
+      tus necesidades
+    </div>
+    <div class="cont-list">
+      <ul>
+        <li><span>About us</span></li>
+        <li><span>Services</span></li>
+        <li><span>Study cases</span></li>
+        <li><span>Contact</span></li>
+      </ul>
+    </div>
+    <div>
+      Social Icons
+    </div>
+  </div>
+</nav>
