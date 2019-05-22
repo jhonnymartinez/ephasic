@@ -4,6 +4,7 @@ $w-toggle-btn: 30px
 $h-toggle-btn: 20px
 $bg-color-navbar: #E7F5F4
 $text-color-dark: #4f4f4f
+$color-primary: #009688
     
 .custom-nav
     display: block
@@ -55,7 +56,7 @@ $text-color-dark: #4f4f4f
     background: $bg-color-navbar
     opacity: 0.97
     .slogan
-        color: $text-color-dark
+        color: $color-primary
         text-align: center
         font-size: 1.3rem
         padding-top: 20px
@@ -63,12 +64,17 @@ $text-color-dark: #4f4f4f
 .cont-list
     padding-top: 30px
     text-align: center
-    color: $text-color-dark
+    color: $color-primary
     ul
         list-style-type: none
         padding-inline-start: 0
         li
-            margin-top: 20px
-            span
+            margin-top: 25px
+            span.anteitem
+                font-size: 0.75rem
+                line-height: 1rem
+                text-transform: uppercase
+            span.item
                 font-size: 2rem
+                line-height: 1.75rem
                 font-weight: bold
