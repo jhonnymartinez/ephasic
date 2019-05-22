@@ -11,8 +11,7 @@
   </div>
   <div *ngIf="isToggled" class="cont-content">
     <div class="slogan">
-      Trascendemos<br>
-      tus necesidades
+      {{ 'demo.title' | translate }}
     </div>
     <div class="cont-list">
       <ul>
@@ -35,7 +34,8 @@
       </ul>
     </div>
     <div>
-      Social Icons
+      <button (click)="useLanguage('en')">en</button>
+      <button (click)="useLanguage('es')">es</button>
     </div>
   </div>
 </nav>
