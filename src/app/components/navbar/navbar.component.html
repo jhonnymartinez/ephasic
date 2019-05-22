@@ -11,19 +11,39 @@
   </div>
   <div *ngIf="isToggled" class="cont-content">
     <div class="slogan">
-      Trascendemos<br>
-      tus necesidades
+      {{ 'navbar.slogan' | translate }}
     </div>
     <div class="cont-list">
       <ul>
-        <li><span>About us</span></li>
-        <li><span>Services</span></li>
-        <li><span>Study cases</span></li>
-        <li><span>Contact</span></li>
+        <li>
+            <span class="anteitem">{{ 'navbar.aboutus_pretitle' | translate }}</span><br>
+            <span class="item">{{ 'navbar.aboutus_title' | translate }}</span>
+        </li>
+        <li>
+            <span class="anteitem">{{ 'navbar.services_pretitle' | translate }}</span><br>
+            <span class="item">{{ 'navbar.services_title' | translate }}</span>
+        </li>
+        <li>
+            <span class="anteitem">{{ 'navbar.study_cases_pretitle' | translate }}</span><br>
+            <span class="item">{{ 'navbar.study_cases_title' | translate }}</span>
+        </li>
+        <li>
+            <span class="anteitem">{{ 'navbar.contact_pretitle' | translate }}</span><br>
+            <span class="item">{{ 'navbar.contact_title' | translate }}</span>
+        </li>
       </ul>
     </div>
-    <div>
-      Social Icons
+    <div class="footer">
+      <div class="cont-lang">
+          <span (click)="useLanguage('es')"><img src="../../../assets/img/common/flag_venezuela.svg"></span>
+          <span (click)="useLanguage('en')"><img src="../../../assets/img/common/flag_usa.svg"></span>
+      </div>
+      <div class="cont-text">
+        <hr>
+        <span>3Phasic Solutions, C.A. | J-40855915-3</span><br>
+        <span>Caracas, Venezuela</span>
+      </div>
+      
     </div>
   </div>
 </nav>

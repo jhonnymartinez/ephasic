@@ -1,9 +1,9 @@
+@import "../../../assets/sass/variables.sass"
+    
 $h-navbar: 72px
-$margin-brand-img: 20px
+$margin-brand-img: 25px
 $w-toggle-btn: 30px
-$h-toggle-btn: 20px
-$bg-color-navbar: #E7F5F4
-$text-color-dark: #4f4f4f
+$h-toggle-btn: 15px
     
 .custom-nav
     display: block
@@ -11,7 +11,7 @@ $text-color-dark: #4f4f4f
     left: 0
     top: 0
     z-index: 100
-    background: $bg-color-navbar
+    background: $color-primary-lighter
     height: $h-navbar
     width: 100%
 
@@ -32,43 +32,106 @@ $text-color-dark: #4f4f4f
     text-align: right
     .hamburger
         padding: 0
-    .hamburger-box 
-        margin: 22px
-        padding-top: 4px
+    .hamburger-box
+        padding-top: 48px
+        padding-right: 50px
         width: $w-toggle-btn
         height: $h-toggle-btn
         .hamburger-inner
             width: $w-toggle-btn - 2px
-            background-color: #4f4f4f
+            background-color: $color-primary
             &:before
                 width: $w-toggle-btn - 2px
-                background-color: #4f4f4f
+                background-color: $color-primary
             &:after
                 width: $w-toggle-btn - 2px
-                background-color: #4f4f4f
+                background-color: $color-primary
 
 .cont-content 
-    display: block
+    display: flex
+    flex-direction: column;
+    justify-content: space-between;
     float: left
     width: 100%
-    height: calc(100vh - 72px)
-    background: $bg-color-navbar
-    opacity: 0.97
+    min-height: calc(100vh - 72px)
+    background: linear-gradient(to bottom right, $color-primary-lighter, $color-white)
+    opacity: 0.95
     .slogan
-        color: $text-color-dark
+        color: $color-primary
         text-align: center
         font-size: 1.3rem
         padding-top: 20px
+        @media (min-width: $layout-breakpoint-small)
+            font-size: 2rem
+            padding-top: 40px
+            width: 50%
+            margin-left: 25%
+
 
 .cont-list
-    padding-top: 30px
     text-align: center
-    color: $text-color-dark
+    color: $color-primary
     ul
         list-style-type: none
         padding-inline-start: 0
         li
-            margin-top: 20px
-            span
+            margin-top: 25px
+            opacity: 0.65
+            cursor: pointer
+            color: $color-dark
+            span.anteitem
+                font-size: 0.75rem
+                line-height: 1rem
+                text-transform: uppercase
+                @media (min-width: $layout-breakpoint-small)
+                    font-size: 1.2rem
+                    line-height: 1rem
+                @media (min-width: $layout-breakpoint-medium)
+                    font-size: 0.75rem
+                    line-height: 1rem
+                @media (min-width: $layout-breakpoint-large)
+                    font-size: 1rem
+                    line-height: 1rem
+            span.item
                 font-size: 2rem
+                line-height: 1.75rem
                 font-weight: bold
+                @media (min-width: $layout-breakpoint-small)
+                    font-size: 3rem
+                    line-height: 2.5rem
+                @media (min-width: $layout-breakpoint-medium)
+                    font-size: 2rem
+                    line-height: 1.75rem
+                @media (min-width: $layout-breakpoint-large)
+                    font-size: 2.5rem
+                    line-height: 2.2rem
+            @media (min-width: $layout-breakpoint-small)
+                margin-top: 60px
+            @media (min-width: $layout-breakpoint-medium)
+                margin-top: 30px
+            @media (min-width: $layout-breakpoint-large)
+                margin-top: 40px
+            &:hover
+                opacity: 1
+                color: $color-primary
+
+.footer
+    padding-bottom: 20px
+    text-align: center
+    .cont-lang
+        padding: 10px
+        span
+            img
+                height: 30px
+                margin: 20px
+                @media (min-width: $layout-breakpoint-small)
+                    height: 40px
+                    margin: 30px
+    .cont-text
+        text-transform: uppercase
+        font-size: 0.75rem
+        line-height: 1rem
+        color: $color-primary
+        @media (min-width: $layout-breakpoint-small)
+            font-size: 1rem
+            line-height: 1.5rem

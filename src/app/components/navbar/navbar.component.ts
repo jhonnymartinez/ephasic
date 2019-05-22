@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.sass']
 })
 export class NavbarComponent implements OnInit {
-
+  
   isToggled = false;
 
-  constructor() { }
+  constructor(private translate: TranslateService) {
+    translate.setDefaultLang('es');
+  }
 
   ngOnInit() {
   }
@@ -24,6 +27,10 @@ export class NavbarComponent implements OnInit {
       output = 'is-active';
     }
     return output;
+  }
+
+  useLanguage(language: string) {
+    this.translate.use(language);
   }
 
 }
