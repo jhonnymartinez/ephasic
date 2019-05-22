@@ -53,14 +53,20 @@ $h-toggle-btn: 15px
     justify-content: space-between;
     float: left
     width: 100%
-    height: calc(100vh - 72px)
+    min-height: calc(100vh - 72px)
     background: linear-gradient(to bottom right, $color-primary-lighter, $color-white)
-    opacity: 0.97
+    opacity: 0.95
     .slogan
         color: $color-primary
         text-align: center
         font-size: 1.3rem
         padding-top: 20px
+        @media (min-width: $layout-breakpoint-small)
+            font-size: 2rem
+            padding-top: 40px
+            width: 50%
+            margin-left: 25%
+
 
 .cont-list
     text-align: center
@@ -70,27 +76,62 @@ $h-toggle-btn: 15px
         padding-inline-start: 0
         li
             margin-top: 25px
+            opacity: 0.65
+            cursor: pointer
+            color: $color-dark
             span.anteitem
                 font-size: 0.75rem
                 line-height: 1rem
                 text-transform: uppercase
+                @media (min-width: $layout-breakpoint-small)
+                    font-size: 1.2rem
+                    line-height: 1rem
+                @media (min-width: $layout-breakpoint-medium)
+                    font-size: 0.75rem
+                    line-height: 1rem
+                @media (min-width: $layout-breakpoint-large)
+                    font-size: 1rem
+                    line-height: 1rem
             span.item
                 font-size: 2rem
                 line-height: 1.75rem
                 font-weight: bold
+                @media (min-width: $layout-breakpoint-small)
+                    font-size: 3rem
+                    line-height: 2.5rem
+                @media (min-width: $layout-breakpoint-medium)
+                    font-size: 2rem
+                    line-height: 1.75rem
+                @media (min-width: $layout-breakpoint-large)
+                    font-size: 2.5rem
+                    line-height: 2.2rem
+            @media (min-width: $layout-breakpoint-small)
+                margin-top: 60px
+            @media (min-width: $layout-breakpoint-medium)
+                margin-top: 30px
+            @media (min-width: $layout-breakpoint-large)
+                margin-top: 40px
+            &:hover
+                opacity: 1
+                color: $color-primary
 
 .footer
     padding-bottom: 20px
     text-align: center
-    font-size: 0.75rem
-    line-height: 1rem
-    color: $color-primary
     .cont-lang
         padding: 10px
         span
             img
                 height: 30px
-                margin: 10px
-
+                margin: 20px
+                @media (min-width: $layout-breakpoint-small)
+                    height: 40px
+                    margin: 30px
     .cont-text
         text-transform: uppercase
+        font-size: 0.75rem
+        line-height: 1rem
+        color: $color-primary
+        @media (min-width: $layout-breakpoint-small)
+            font-size: 1rem
+            line-height: 1.5rem
