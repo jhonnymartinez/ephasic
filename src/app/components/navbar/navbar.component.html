@@ -11,31 +11,40 @@
   </div>
   <div *ngIf="isToggled" class="cont-content">
     <div class="slogan">
-      {{ 'demo.title' | translate }}
+      {{ 'navbar.slogan' | translate }}
     </div>
     <div class="cont-list">
       <ul>
         <li>
-            <span class="anteitem">Origins, values and destiny</span><br>
-            <span class="item">About us</span>
+            <span class="anteitem">{{ 'navbar.aboutus_pretitle' | translate }}</span><br>
+            <span class="item">{{ 'navbar.aboutus_title' | translate }}</span>
         </li>
         <li>
-            <span class="anteitem">technical expertise areas</span><br>
-            <span class="item">Services</span>
+            <span class="anteitem">{{ 'navbar.services_pretitle' | translate }}</span><br>
+            <span class="item">{{ 'navbar.services_title' | translate }}</span>
         </li>
         <li>
-            <span class="anteitem">Examples about our previous work</span><br>
-            <span class="item">Study Cases</span>
+            <span class="anteitem">{{ 'navbar.study_cases_pretitle' | translate }}</span><br>
+            <span class="item">{{ 'navbar.study_cases_title' | translate }}</span>
         </li>
         <li>
-            <span class="anteitem">Our coordinates</span><br>
-            <span class="item">Contact</span>
+            <span class="anteitem">{{ 'navbar.contact_pretitle' | translate }}</span><br>
+            <span class="item">{{ 'navbar.contact_title' | translate }}</span>
         </li>
       </ul>
     </div>
-    <div>
-      <button (click)="useLanguage('en')">en</button>
-      <button (click)="useLanguage('es')">es</button>
+    <div class="footer">
+      <div class="cont-lang">
+          <span (click)="useLanguage('es')"><img src="../../../assets/img/common/flag_venezuela.svg"></span>
+          <span (click)="useLanguage('en')"><img src="../../../assets/img/common/flag_usa.svg"></span>
+      </div>
+      <div class="cont-text">
+        <hr>
+        <span>3Phasic Solutions, C.A.</span><br>
+        <span>J-40855915-3</span><br>
+        <span>Caracas - Venezuela</span>
+      </div>
+      
     </div>
   </div>
 </nav>

@@ -1,6 +1,13 @@
 {
-    "demo": {
-        "title": "Translation demo",
-        "text": "This is a simple demonstration app for ngx-translate"
+    "navbar": {
+        "slogan": "We trascend your necessities",
+        "aboutus_pretitle": "Origins, values and destiny",
+        "aboutus_title": "About us",
+        "services_pretitle": "Technical expertise areas",
+        "services_title": "Services",
+        "study_cases_pretitle": "Successfull Projects",
+        "study_cases_title": "Study Cases",
+        "contact_pretitle": "Our coordinates",
+        "contact_title": "Contact us"
     }
 }

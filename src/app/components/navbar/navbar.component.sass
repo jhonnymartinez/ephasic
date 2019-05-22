@@ -48,7 +48,9 @@ $h-toggle-btn: 15px
                 background-color: $color-primary
 
 .cont-content 
-    display: block
+    display: flex
+    flex-direction: column;
+    justify-content: space-between;
     float: left
     width: 100%
     height: calc(100vh - 72px)
@@ -61,7 +63,6 @@ $h-toggle-btn: 15px
         padding-top: 20px
 
 .cont-list
-    padding-top: 30px
     text-align: center
     color: $color-primary
     ul
@@ -77,3 +78,19 @@ $h-toggle-btn: 15px
                 font-size: 2rem
                 line-height: 1.75rem
                 font-weight: bold
+
+.footer
+    padding-bottom: 20px
+    text-align: center
+    font-size: 0.75rem
+    line-height: 1rem
+    color: $color-primary
+    .cont-lang
+        padding: 10px
+        span
+            img
+                height: 30px
+                margin: 10px
+
+    .cont-text
+        text-transform: uppercase
