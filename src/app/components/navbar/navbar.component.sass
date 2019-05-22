@@ -1,10 +1,9 @@
+@import "../../../assets/sass/variables.sass"
+    
 $h-navbar: 72px
-$margin-brand-img: 20px
+$margin-brand-img: 25px
 $w-toggle-btn: 30px
-$h-toggle-btn: 20px
-$bg-color-navbar: #E7F5F4
-$text-color-dark: #4f4f4f
-$color-primary: #009688
+$h-toggle-btn: 15px
     
 .custom-nav
     display: block
@@ -12,7 +11,7 @@ $color-primary: #009688
     left: 0
     top: 0
     z-index: 100
-    background: $bg-color-navbar
+    background: $color-primary-lighter
     height: $h-navbar
     width: 100%
 
@@ -33,27 +32,27 @@ $color-primary: #009688
     text-align: right
     .hamburger
         padding: 0
-    .hamburger-box 
-        margin: 22px
-        padding-top: 4px
+    .hamburger-box
+        padding-top: 48px
+        padding-right: 50px
         width: $w-toggle-btn
         height: $h-toggle-btn
         .hamburger-inner
             width: $w-toggle-btn - 2px
-            background-color: #4f4f4f
+            background-color: $color-primary
             &:before
                 width: $w-toggle-btn - 2px
-                background-color: #4f4f4f
+                background-color: $color-primary
             &:after
                 width: $w-toggle-btn - 2px
-                background-color: #4f4f4f
+                background-color: $color-primary
 
 .cont-content 
     display: block
     float: left
     width: 100%
     height: calc(100vh - 72px)
-    background: $bg-color-navbar
+    background: linear-gradient(to bottom right, $color-primary-lighter, $color-white)
     opacity: 0.97
     .slogan
         color: $color-primary
