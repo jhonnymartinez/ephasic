@@ -7,7 +7,7 @@ $h-toggle-btn: 15px
     
 .custom-nav
     display: block
-    position: absolute
+    position: fixed
     left: 0
     top: 0
     z-index: 100
@@ -55,12 +55,15 @@ $h-toggle-btn: 15px
     width: 100%
     min-height: calc(100vh - 72px)
     background: linear-gradient(to bottom right, $color-primary-lighter, $color-white)
-    opacity: 0.95
+    opacity: 0.97
     .slogan
         color: $color-primary
         text-align: center
         font-size: 1.3rem
         padding-top: 20px
+        @media (max-width: 350px)
+            font-size: 1rem
+            padding-top: 15px
         @media (min-width: $layout-breakpoint-small)
             font-size: 2rem
             padding-top: 40px
@@ -96,6 +99,9 @@ $h-toggle-btn: 15px
                 font-size: 2rem
                 line-height: 1.75rem
                 font-weight: bold
+                @media (max-width: 350px)
+                    font-size: 1.5rem
+                    line-height: 1.5rem
                 @media (min-width: $layout-breakpoint-small)
                     font-size: 3rem
                     line-height: 2.5rem
@@ -105,6 +111,8 @@ $h-toggle-btn: 15px
                 @media (min-width: $layout-breakpoint-large)
                     font-size: 2.5rem
                     line-height: 2.2rem
+            @media (max-width: 350px)
+                margin-top: 15px
             @media (min-width: $layout-breakpoint-small)
                 margin-top: 60px
             @media (min-width: $layout-breakpoint-medium)
@@ -119,7 +127,6 @@ $h-toggle-btn: 15px
     padding-bottom: 20px
     text-align: center
     .cont-lang
-        padding: 10px
         span
             img
                 height: 30px

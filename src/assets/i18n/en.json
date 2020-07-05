@@ -9,5 +9,21 @@
         "study_cases_title": "Study cases",
         "contact_pretitle": "Our coordinates",
         "contact_title": "Contact us"
+    },
+    "home": {
+        "slogan_item_1": "We",
+        "slogan_item_2": "Trascend",
+        "slogan_item_3": "your necessities",
+        "top_text_1": "We help you to go to the furute and take a new step on Industrial and Commercial Automation and Optimization Process.",
+        "top_text_2": "We are game changers, we deal with the best trending technology, always understanding your business.",
+        "divisor_text1": "Our",
+        "divisor_text2": "services",
+        "electricity_title": "Electricity",
+        "electricity_text": "We design, provide, deploy and maintain Power Distribution Systems for industrial, commercial and residential sectors, with all control and monitoring features.",
+        "energy_title": "Autogeneration",
+        "energy_text": "Solutions for electric power supply for contingency cases, self-generation and as the only option in isolated installations located in remote places.",
+        "platform_title": "Cross Platforms",
+        "platform_text": "REST and Websocket APIs to integrate Web Applications, Mobile Apps, Desktop Apps and IoT elements to a customized platform for a business and their environment."
+        
     }
 }

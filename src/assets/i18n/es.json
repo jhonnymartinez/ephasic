@@ -9,5 +9,25 @@
         "study_cases_title": "Casos de estudio",
         "contact_pretitle": "Nuestras coordenadas",
         "contact_title": "Contacto"
+    },
+    "home": {
+        "slogan_item_1": "",
+        "slogan_item_2": "Trascendemos",
+        "slogan_item_3": "tus necesidades",
+        "top_text_1": "Te ayudamos a entrar en el futuro y dar un nuevo paso en la Automatización de la Industria y Comercio.",
+        "top_text_2": "Cambiamos las reglas del juego con las mejores tecnologías de vanguardia, siempre entendiendo tu negocio y su entorno.",
+        "divisor_text1": "Nuestros",
+        "divisor_text2": "servicios",
+        "industry_title": "Industria 4.0",
+        "industry_text": "Plataformas automatizadas para edificios e industrias. Ecosistemas IoT y M2M, que incluye conexiones entre dispositivos, máquinas, procesos y personas.",
+        "electricity_title": "Electricidad",
+        "electricity_text": "Diseñamos, proveemos, implementamos y mantenemos sistemas de distribución de energía industrial, comercial y residencial, con funciones de control y monitoreo.",
+        "energy_title": "Autogeneración",
+        "energy_text": "Soluciones para el suministro de energía eléctrica para casos de contingencia, autogeneración y como la única opción en instalaciones aisladas ubicadas en lugares remotos.",
+        "platform_title": "Multiplataformas",
+        "platform_text": "APIs REST y Websocket para integrar aplicaciones web, móviles, de escritorio y elementos de IoT en plataformas personalizadas para empresas y su entorno."
     }
+    
+
+
 }
