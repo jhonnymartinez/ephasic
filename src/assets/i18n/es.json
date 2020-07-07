@@ -16,8 +16,9 @@
         "slogan_item_3": "tus necesidades",
         "top_text_1": "Te ayudamos a entrar en el futuro y dar un nuevo paso en la Automatización de la Industria y Comercio.",
         "top_text_2": "Cambiamos las reglas del juego con las mejores tecnologías de vanguardia, siempre entendiendo tu negocio y su entorno.",
-        "divisor_text1": "Nuestros",
-        "divisor_text2": "servicios",
+        "about_us_button": "Conócenos",
+        "divisor1_text1": "Nuestros",
+        "divisor1_text2": "servicios",
         "industry_title": "Industria 4.0",
         "industry_text": "Plataformas automatizadas para edificios e industrias. Ecosistemas IoT y M2M, que incluye conexiones entre dispositivos, máquinas, procesos y personas.",
         "electricity_title": "Electricidad",
@@ -25,7 +26,27 @@
         "energy_title": "Autogeneración",
         "energy_text": "Soluciones para el suministro de energía eléctrica para casos de contingencia, autogeneración y como la única opción en instalaciones aisladas ubicadas en lugares remotos.",
         "platform_title": "Multiplataformas",
-        "platform_text": "APIs REST y Websocket para integrar aplicaciones web, móviles, de escritorio y elementos de IoT en plataformas personalizadas para empresas y su entorno."
+        "platform_text": "APIs REST y Websocket para integrar aplicaciones web, móviles, de escritorio y elementos de IoT en plataformas personalizadas para empresas y su entorno.",
+        "trust_title": "+25 projectos completados en 4 años de experiencia y seguimos creciendo",
+        "trust_text1": "Consolidamos las ventajas que nuestros clientes tienen en el mercado y los mantenemos actualizados con las mejores tecnologías disponibles para cada necesidad.",
+        "trust_text2": "Conoce más acerca de nuestros casos de estudios y ve como resolvemos los desafíos que se nos presentan.",
+        "trust_button": "Casos de estudio",
+        "contactus_title": "Te invitamos a contactarnos y contarnos tus necesidades, para convertirlas en objetivos factibles",
+        "contactus_button": "Contacto"
+    },
+    "footer": {
+        "about_us": "Nosotros",
+        "origins": "Origenes",
+        "values": "Valores",
+        "destiny": "Destino",
+        "team": "Equipo",
+        "services": "Servicios",
+        "industry": "Industria 4.0",
+        "electricity": "Electricidad",
+        "autogeneration": "Autogeneración",
+        "platforms": "Multiplatformas",
+        "contact": "Contactos",
+        "use_cases": "Casos de estudio"
     }
     
 

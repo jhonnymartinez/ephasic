@@ -20,8 +20,9 @@
         @media (min-height: 768px)
             height: 480px
         @media (min-width: $layout-breakpoint-small)
-            background: url("https://res.cloudinary.com/ephasic/image/upload/v1593969547/top_md-min_qjpscy.png")
+            background: url("https://res.cloudinary.com/ephasic/image/upload/v1593976136/top_md-min_akd2nz.png")
             background-repeat: no-repeat
+            background-size: cover
             height: 750px
         @media (min-width: $layout-breakpoint-medium)
             background: url("https://res.cloudinary.com/ephasic/image/upload/v1593970980/top_lg-min_wwpozh.png")
@@ -115,6 +116,21 @@
                 margin-top: 280px
                 font-size: 3.5rem
                 line-height: 4.5rem
+
+    .cont-divisor-1
+        background: #E1F3F4
+        background-size: cover
+        background-repeat: no-repeat
+        display: flex
+        flex-direction: column
+        width: 100%
+        padding: 20px
+        padding-top: 60px
+        padding-bottom: 60px
+        text-align: center        
+        h3
+            color: $color-dark
+            font-weight: bold
     
     .cont-services
         padding: 20px
@@ -142,6 +158,63 @@
                 @media (min-width: $layout-breakpoint-large)
                     padding-right: 60px
                     padding-left: 60px
-        
-
+    
+    .cont-trust
+        background: #E1F3F4
+        display: flex
+        flex-direction: column
+        width: 100%
+        padding: 20px
+        padding-top: 30px
+        padding-bottom: 90px
+        text-align: center        
+        h3
+            color: $color-dark
+            font-weight: bold
+            padding-top: 60px
+            padding-bottom: 60px
+            @media (min-width: $layout-breakpoint-small)
+                padding-left: 10%
+                padding-right: 10%
+            @media (min-width: $layout-breakpoint-medium)
+                padding-left: 30%
+                padding-right: 30%
+        p
+            color: $color-dark
+            padding-top: 30px
+            @media (min-width: $layout-breakpoint-small)
+                padding-left: 10%
+                padding-right: 10%
+            @media (min-width: $layout-breakpoint-medium)
+                padding-left: 30%
+                padding-right: 30%
+        button
+            width: 70%
+            margin-left: 15%
+            @media (min-width: $layout-breakpoint-small)
+                width: 30%
+                margin-left: 35%
+            @media (min-width: $layout-breakpoint-medium)
+                width: 15%
+                margin-left: 42.5%
+    
+    .cont-contactus
+        display: flex
+        flex-direction: column
+        padding: 20px
+        padding-top: 90px
+        padding-bottom: 90px
+        text-align: center        
+        h4
+            color: $color-dark
+            padding-bottom: 20px
+        button
+            width: 50%
+            margin-left: 25%
+            @media (min-width: $layout-breakpoint-small)
+                width: 30%
+                margin-left: 35%
+            @media (min-width: $layout-breakpoint-medium)
+                width: 10%
+                margin-left: 45%
 

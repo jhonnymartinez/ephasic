@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-
+@import "./assets/sass/variables.sass"
 @import "../node_modules/hamburgers/_sass/hamburgers/hamburgers.scss"
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap');
 
@@ -9,3 +9,64 @@ body
 
 *
     font-family: 'Raleway', sans-serif;
+
+.button 
+    border: none
+    color: white
+    padding: 12px 28px
+    border-radius: 50px
+    text-align: center
+    text-decoration: none
+    display: inline-block
+    font-size: 16px
+    margin: 4px 2px
+    transition-duration: 0.4s
+    cursor: pointer
+
+.button1 
+    background: $color-white
+    color: $color-dark
+    border: 2px solid $color-primary
+    &:hover
+        background-color: $color-primary
+        color: $color-white
+
+.cont-footer
+    padding: 30px
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    background: $color-primary-darker
+    color: $color-white
+    .group
+        padding-bottom: 30px
+        @media (min-width: $layout-breakpoint-small)
+            padding-bottom: 0px
+        ul
+            list-style-type: none
+            padding: 0px
+            li
+                list-style: none
+    @media (min-width: $layout-breakpoint-small)
+        flex-direction: row
+        padding-left: 15%
+        padding-right: 15%
+    @media (min-width: $layout-breakpoint-small)
+        padding-left: 30%
+        padding-right: 30%
+        
+
+.footer-bottom
+    padding: 20px
+    background: $color-primary-darker
+    color: $color-white
+    img
+        height: 25px
+        margin-bottom: 20px
+    @media (min-width: $layout-breakpoint-small)
+        padding-left: 15%
+        padding-right: 15%
+    @media (min-width: $layout-breakpoint-small)
+        padding-left: 30%
+        padding-right: 30%
+    
